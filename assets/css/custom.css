@@ -1,1 +1,16 @@
 /* Place custom css here */
+.header-title {
+font-size: 2em;
+}
+/* Place custom css here */
+
+:root {
+/*  --header-bottom-gap: 0rem;*/
+--h1-font-size: 1.5em;
+--p-font-size: 1em;
+}
+
+.box {
+display: flex;
+flex-wrap: wrap;
+}
