@@ -13,9 +13,9 @@
     {{/* Title and Summary */}}
 
     <h1 class="single-title">{{ .Title }}</h1>
-    {{ with .Param "summary" }}
+<!--     {{ with .Param "summary" }}
     <p class="single-summary">{{ . }}</p>
-    {{ end }}
+    {{ end }} -->
 
     {{/* Reading Time */}}
 
@@ -43,7 +43,7 @@
     {{ range $index, $tag := . }}
     {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
     <span>
-      <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+      <a target="_blank" href="{{ .Permalink }}" >#{{ .LinkTitle }}</a>
     </span>
     {{ end }}
     {{ end }}
